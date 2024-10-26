@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Blood Donation Camp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Join Blood Donation Camp</h1>
+    </header>
+    <main>
+        <form onsubmit="submitJoinForm(event)" class="donate-form" aria-label="Join Blood Donation Camp Form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true" aria-label="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true" aria-label="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" name="blood-group" required aria-required="true"
+                    aria-label="Select your blood group">
+                    <option value="" disabled selected>Select your blood group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-button" aria-label="Submit your details to join">Join</button>
+        </form>
+        <div class="result-message" id="join-result-message" role="alert" aria-live="polite"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blood Bank Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
