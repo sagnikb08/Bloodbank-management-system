@@ -15,10 +15,10 @@
         <h1>Sagnik's Blood Bank</h1>
         <div>
             <a href="#camps" class="nav-button">Donation Camps</a>
-            <a href="#donate" class="nav-button">Donate Blood</a>
+            <a href="join.html" class="nav-button">Donate Blood</a> <!-- Modified to link to join.html -->
             <a href="#search" class="nav-button">Blood Availability</a>
             <a href="#testimonials" class="nav-button">Testimonials</a>
-            <a href="#contact" class="nav-button">Contact</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScp2nN0sA6sPWGU4tkPwvVtPQoPXwjjppNO5Cc8UlumUGRWuQ/viewform" class="nav-button" target="_blank">Emergency contact</a>
         </div>
     </div>
 
@@ -33,48 +33,18 @@
                     <button class="card-button" onclick="location.href='join.html'">Join Now</button>
                 </div>
                 <div class="card">
-                    <p><strong>Location:</strong>B-187,Greenfied, Faridabad</p>
+                    <p><strong>Location:</strong> B-187, Greenfield, Faridabad</p>
                     <p><strong>Date:</strong> November 25, 2024</p>
                     <p><strong>Time:</strong> 9 AM - 3 PM</p>
                     <button class="card-button" onclick="location.href='join.html'">Join Now</button>
                 </div>
                 <div class="card">
-                    <p><strong>Location:</strong>New Town,Kolkata</p>
+                    <p><strong>Location:</strong> New Town, Kolkata</p>
                     <p><strong>Date:</strong> November 30, 2024</p>
                     <p><strong>Time:</strong> 10 AM - 4 PM</p>
                     <button class="card-button" onclick="location.href='join.html'">Join Now</button>
                 </div>
             </div>
-        </section>
-
-        <section id="donate">
-            <h2 class="section-title">Donate Blood</h2>
-            <form class="donate-form" onsubmit="handleDonateForm(event)">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="age">Age:</label>
-                    <input type="number" id="age" required>
-                </div>
-                <div class="form-group">
-                    <label for="blood-group">Blood Group:</label>
-                    <select id="blood-group" required>
-                        <option value="">Select</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                    </select>
-                </div>
-                <input type="submit" class="submit-button" value="Register">
-            </form>
-            <div class="result-message" id="donate-result-message" role="alert" aria-live="polite"></div>
         </section>
 
         <section id="search">
@@ -103,14 +73,10 @@
             <h2 class="section-title">Testimonials</h2>
             <div class="testimonial-carousel">
                 <div class="testimonial">
-                    <p>"I was in dire need of blood, and this system helped me find a donor quickly. Thank you!" -
-                        Aditya
-                        Garg</p>
+                    <p>"I was in dire need of blood, and this system helped me find a donor quickly. Thank you!" - Aditya Garg</p>
                 </div>
                 <div class="testimonial">
-                    <p>"Donating blood was a rewarding experience. I felt great knowing I could help save lives." -
-                        Rohit
-                        kumar</p>
+                    <p>"Donating blood was a rewarding experience. I felt great knowing I could help save lives." - Rohit Kumar</p>
                 </div>
                 <div class="testimonial">
                     <p>"The process was smooth and easy. I encourage everyone to donate!" - Jayant Verma</p>
@@ -120,24 +86,11 @@
 
         <section id="contact">
             <h2 class="section-title">Contact Us</h2>
-            <form class="contact-form" onsubmit="handleContactForm(event)">
-                <div class="form-group">
-                    <label for="contact-name">Name:</label>
-                    <input type="text" id="contact-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact-email">Email:</label>
-                    <input type="email" id="contact-email" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact-message">Message:</label>
-                    <textarea id="contact-message" required></textarea>
-                </div>
-                <input type="submit" class="submit-button" value="Send Message">
-            </form>
+            <p><strong>Address:</strong> Sector – 43, Delhi–Surajkund Road, Faridabad – 121004, Haryana, India</p>
+            <p><strong>Email:</strong> <a href="mailto:sagnik_biswas23@manavrachna.net">sagnik_biswas23@manavrachna.net</a></p>
             <div class="result-message" id="contact-result-message" role="alert" aria-live="polite"></div>
         </section>
-    </div>
+        
 
     <footer>
         <p>&copy; 2024 Blood Bank Management System. All rights reserved.</p>
